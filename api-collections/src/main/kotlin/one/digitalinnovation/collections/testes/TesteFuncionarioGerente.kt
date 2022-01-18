@@ -7,8 +7,10 @@ import one.digitalinnovation.collections.Gerente
 fun main() {
 
 
-    val Henrique = Gerente("Henrique araujo", "12323434577", 5000.0)
+    val henrique = Gerente("Henrique araujo", "12323434577", 5000.0, "senha123")
 
-    ImprimeRelatorioFuncionario.imprime(Henrique)
+    ImprimeRelatorioFuncionario.imprime(henrique)
+
+    TesteAutenticacao().autentica(henrique)
 
 }
